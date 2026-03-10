@@ -693,9 +693,7 @@
         <div style="font-family:'Courier New',Courier,monospace; font-size:9px; letter-spacing:1.5px; text-transform:uppercase; color:rgba(184,92,56,.65); margin-bottom:10px;">MID-TIER TPM · Investor Relationship</div>
         <h4 style="font-family:Georgia,'Times New Roman',serif; font-size:16px; font-weight:700; color:var(--stone); margin-bottom:10px;">Golden Considerations</h4>
         <p style="font-size:12px; color:var(--warm-mid); line-height:1.7; margin-bottom:12px;">Mid-size TPM operating primarily in the Southeast and Midwest. Less aggressive than Precoa on exclusivity terms. May represent an earlier, lower-risk entry point for agent relationships.</p>
-        <div style="background:rgba(196,165,90,.08); border-left:2px solid rgba(196,165,90,.4); padding:10px 12px; margin-bottom:12px; font-size:11.5px; color:var(--warm-mid); line-height:1.75;">
-          <strong style="color:var(--stone);">★ Investor Connection:</strong> The Rae family, founders of Golden Considerations, are investors in Parting Stone. The original investor, <strong>Bob Rae</strong>, passed away several years ago, but the relationship remains active through his son <strong>Josh Rae</strong>, who is involved in the family business. This is a meaningful pre-existing relationship and a natural starting point for a TPM conversation.
-        </div>
+
         <div style="font-family:'Courier New',Courier,monospace; font-size:10px; color:var(--warm-mid);">Volume: industry intelligence only</div>
       </div>
 
@@ -953,7 +951,7 @@
 
   <div class="ppanel active" id="panel-c">
     <div style="font-size:11.5px; color:rgba(245,240,232,.35); font-family:'Courier New',Courier,monospace; letter-spacing:.5px; margin-bottom:16px;">All insurers: 3% penetration plateau · 10,440 contracts/yr · Slow adoption, no signing bonus</div>
-    <div style="font-family:'Courier New',Courier,monospace; font-size:9px; letter-spacing:2px; text-transform:uppercase; color:rgba(232,213,160,.5); margin-bottom:10px;">2026–2035 · First Decade · Y-Axis: $0–$5M</div>
+    <div style="font-family:'Courier New',Courier,monospace; font-size:9px; letter-spacing:2px; text-transform:uppercase; color:rgba(232,213,160,.5); margin-bottom:10px;">2026–2035 · First Decade · Y-Axis: $0–$21M</div>
     <div class="chart-10"><canvas id="chart-c-10"></canvas></div>
     <div class="expand-btn" id="btn-c" onclick="toggleExpand('c')">
       <div class="expand-btn-left">
@@ -978,7 +976,7 @@
 
   <div class="ppanel" id="panel-b">
     <div style="font-size:11.5px; color:rgba(245,240,232,.35); font-family:'Courier New',Courier,monospace; letter-spacing:.5px; margin-bottom:16px;">All insurers: 6% penetration plateau · 20,880 contracts/yr · Signing bonus secured · Pre-need team operational by Yr 2</div>
-    <div style="font-family:'Courier New',Courier,monospace; font-size:9px; letter-spacing:2px; text-transform:uppercase; color:rgba(232,213,160,.5); margin-bottom:10px;">2026–2035 · First Decade · Y-Axis: $0–$10M</div>
+    <div style="font-family:'Courier New',Courier,monospace; font-size:9px; letter-spacing:2px; text-transform:uppercase; color:rgba(232,213,160,.5); margin-bottom:10px;">2026–2035 · First Decade · Y-Axis: $0–$21M</div>
     <div class="chart-10"><canvas id="chart-b-10"></canvas></div>
     <div class="expand-btn" id="btn-b" onclick="toggleExpand('b')">
       <div class="expand-btn-left">
@@ -1003,7 +1001,7 @@
 
   <div class="ppanel" id="panel-o">
     <div style="font-size:11.5px; color:rgba(245,240,232,.35); font-family:'Courier New',Courier,monospace; letter-spacing:.5px; margin-bottom:16px;">All insurers: 9% penetration plateau · 31,320 contracts/yr · Aggressive team build · Multiple signing bonuses secured</div>
-    <div style="font-family:'Courier New',Courier,monospace; font-size:9px; letter-spacing:2px; text-transform:uppercase; color:rgba(232,213,160,.5); margin-bottom:10px;">2026–2035 · First Decade · Y-Axis: $0–$16M</div>
+    <div style="font-family:'Courier New',Courier,monospace; font-size:9px; letter-spacing:2px; text-transform:uppercase; color:rgba(232,213,160,.5); margin-bottom:10px;">2026–2035 · First Decade · Y-Axis: $0–$21M</div>
     <div class="chart-10"><canvas id="chart-o-10"></canvas></div>
     <div class="expand-btn" id="btn-o" onclick="toggleExpand('o')">
       <div class="expand-btn-left">
@@ -2962,9 +2960,9 @@
   }
 
   // Build all charts
-  buildChart10('chart-c-10', DATA.c, 5000);  setKpis('c',DATA.c);
-  buildChart10('chart-b-10', DATA.b, 10000); setKpis('b',DATA.b);
-  buildChart10('chart-o-10', DATA.o, 16000); setKpis('o',DATA.o);
+  buildChart10('chart-c-10', DATA.c, 21000);  setKpis('c',DATA.c);
+  buildChart10('chart-b-10', DATA.b, 21000); setKpis('b',DATA.b);
+  buildChart10('chart-o-10', DATA.o, 21000); setKpis('o',DATA.o);
 
   // 30-year charts built lazily on first expand
   const chart30Built = {c:false, b:false, o:false};
